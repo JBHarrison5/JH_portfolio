@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device=width, initial-scale=1">
+    <title>Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="script.js" defer></script>
+</head>
+<body>
+
+<section class="titleHeader" id="titleHeader">
+    <div>
+        <h1>John Harrison</h1>
+    </div>
+    <span>Full Stack Software Developer</span>
+    <div class="iconLinks">
+        <a class="socialsIcons" href="https://www.linkedin.com/in/john-harrison5/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+        <a class="socialsIcons" href="https://github.com/JBHarrison5" target="_blank"><i class='bx bxl-github' ></i></a>
+    </div>
+</section>
+<nav>
+    <a href="#titleHeader" class="link">Home</a><span>|</span>
+    <a href="#aboutSection" class="link">About</a><span>|</span>
+    <a href="#projectSection" class="link">Projects</a><span>|</span>
+    <a href="#contactSection" class="link">Contact</a>
+</nav>
+<hr id="titleHr">
+<section class="aboutSection" id="aboutSection">
+    <div class="nameTitle">
+        <h2>About Me</h2>
+    </div>
+    <div class="aboutContents reveal">
+        <img src="img/JH2 (1).jpg" alt="Photo of mountains">
+        <p class="reveal text-start"> My coding journey started as a hobby during lockdown before I took on the iO academy full-stack bootcamp in early 2024.<br><br>
+            Prior to the world of programming, I studied Chemistry at Durham University then worked for<br>Hawkeye Innovations as a Senior Systems Operator. This involved travelling all over the world<br> installing and operating ball-tracking and video replay systems at global sports events like the<br> Olympics and Rugby World Cup!<br><br>
+            Outside of work, sport is my main focus and playing rugby is something I still absolutely love doing! <br><br>
+            I am currently looking for an exciting role where I can utilise both my new programming skills<br>and existing soft skills to progress in the early stages of my software developer journey!
+        </p>
+    </div>
+    <hr>
+</section>
+<section class="projectSection" id="projectSection">
+    <div class="nameTitle">
+        <h2>Projects</h2>
+        <span>Click the images to see the git hub repo!</span>
+    </div>
+    <div class="projectDiv">
+        <a href="https://github.com/iO-Academy/2024-jan-fst-food-delivery" target="_blank"><img class="projectImage hidden" src="img/foodDelivery.png"></a>
+        <p class="projectText hidden">'ScranShippers' is a team project built using React and styled with Bootstrap that fetches and displays various restaurants from a provided API. Users can interact with an individual restaurant and place orders.<br><br><a href="https://io-academy.github.io/2024-jan-fst-food-delivery/">LIVE SITE</a></p>
+    </div>
+    <div class="projectDiv">
+        <p class="projectText hidden">This is a memory game built using javascript and styled with basic CSS. <br><br><a href="https://io-academy.github.io/2024-jan-fst-memory-game/">LIVE SITE</a></p>
+        <a href="https://github.com/iO-Academy/2024-jan-fst-memory-game" target="_blank"><img class="projectImage hidden" src="img/memory-game.png"></a>
+    </div>
+    <div class="projectDiv">
+        <a href="https://github.com/JBHarrison5/todo-list" target="_blank"><img class="projectImage hidden" src="img/todolist.png"></a>
+        <p class="projectText hidden">This is a simple to-do list application built using PHP with the Slim 4 framework and styled using bootstrap. The database was implemented with mySQL.<br><br><a href="https://todo-list.2024-johnh.dev.io-academy.uk/">LIVE SITE</a></p>
+    </div>
+    <div class="projectDiv">
+        <p class="projectText hidden">This is a collection app built with PHP and a mySQL database. The theme is McFlurry's, a passion of mine...<br> Users have the ability to view the collection, add to the collection, view more details for each entry and sort the items.<br><br><a href="https://2024-johnh.dev.io-academy.uk/collection/">LIVE SITE</a></p>
+        <a href="https://github.com/JBHarrison5/collection-app" target="_blank"><img class="projectImage hidden" src="img/mcflywithme.png"></a>
+    </div>
+    <div class="projectDiv">
+        <a href="https://github.com/iO-Academy/2024-jan-fst-music-player" target="_blank"><img class="projectImage hidden" src="img/musicPlayer.png"></a>
+        <p class="projectText hidden">This project created the back end 'API' for a music player app. It extracts artist, album and song data from a mySQL database and returns the required JSON to integrate with a supplied front end.<br>By tracking the number of times a song was played, the most popular albums can be displayed. Additional functionality includes the users ability to favourite a song and search for a specific song.<br> The project was built in an OOP style using PHP.
+        <br><br><a href="https://2024-johnh.dev.io-academy.uk/music-player-fe/">LIVE SITE</a></p>
+    </div>
+    <hr>
+</section>
+<section class="contactSection reveal" id="contactSection">
+    <div class="nameTitle">
+        <h2>Contact</h2>
+    </div>
+    <div class="iconLinks reveal">
+        <a class="contactIcons"><i class='bx bxl-github' ></i></a>
+        <a class="link" href="https://github.com/JBHarrison5" target="_blank">JBHarrison5</a>
+    </div>
+    <div class="iconLinks reveal">
+        <a class="contactIcons"><i class='bx bxl-linkedin'></i></a>
+        <a class="link" href="https://www.linkedin.com/in/john-harrison5" target="_blank">john-harrison5</a>
+    </div>
+    <div class="iconLinks reveal">
+        <a class="contactIcons"><i class='bx bxs-envelope' ></i></a>
+        <p>johnbharrison3@gmail.com</p>
+    </div>
+    <div class="iconLinks reveal">
+        <a class="contactIcons"><i class='bx bxs-home'></i></a>
+        <p>Belfast/Bath (open to relocation)</p>
+    </div>
+    <div class="iconLinks reveal">
+        <a class="contactIcons"><i class='bx bxs-download'></i></a>
+        <p><a href=John_HarrisonCV.pdf download="John_HarrisonCV" class="link" id="clickHere">See my current CV</a></p>
+    </div>
+</section>
+<hr>
+<br>
+</body>
+</html>

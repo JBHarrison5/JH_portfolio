@@ -1,0 +1,274 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000000;
+  color: #399dbe;
+  font-size: 1rem;
+}
+
+section, div {
+  display: flex;
+  flex-direction: column;
+}
+
+section {
+  padding: 1rem;
+}
+
+nav {
+  position: sticky;
+  z-index: 10;
+  padding: 1rem;
+  top: 2vh;
+  margin: 0 auto 8vh auto;
+  background-color: #399dbe;
+  color: #000000;
+  border-radius: 1rem;
+  width: fit-content;
+  justify-content: center;
+  display: flex;
+  gap: 1rem;
+}
+nav .link {
+  color: #000000;
+}
+
+.nameTitle {
+  width: fit-content;
+  padding: 0;
+}
+
+.titleHeader {
+  height: 85vh;
+  justify-content: center;
+}
+.titleHeader div {
+  padding-left: 0;
+}
+.titleHeader h1 {
+  font-size: 2.5rem;
+  color: #399dbe;
+}
+
+.aboutSection span, .titleHeader span {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+span {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+h1, h2 {
+  overflow: hidden;
+  white-space: nowrap;
+  animation: typing 1.3s steps(12, end);
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+.iconLinks {
+  flex-direction: row;
+  padding: 0;
+  align-items: center;
+  margin-top: 2rem;
+  gap: 1rem;
+}
+
+h1, h4 {
+  margin-bottom: 0.5rem;
+}
+
+.aboutSection {
+  gap: 2rem;
+}
+.aboutSection h2 {
+  margin-top: 5vh;
+}
+.aboutSection .aboutContents {
+  padding: 0;
+  position: relative;
+}
+.aboutSection .aboutContents img {
+  border-radius: 1rem;
+}
+.aboutSection .aboutContents p {
+  position: absolute;
+  top: 2rem;
+  font-weight: bold;
+  left: 10%;
+  margin: 0 auto;
+  width: 80%;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 1rem;
+}
+
+.reveal {
+  opacity: 0;
+  transition: all 2s;
+}
+
+.show {
+  opacity: 1;
+}
+
+.projectSection {
+  gap: 2rem;
+}
+.projectSection .projectDiv {
+  flex-direction: row;
+  padding: 0;
+  position: relative;
+}
+.projectSection img {
+  max-width: 65vw;
+  border-radius: 1rem;
+}
+.projectSection p {
+  color: #000000;
+  z-index: 1;
+  width: 45vw;
+  position: absolute;
+  right: 1rem;
+  top: 3rem;
+  background-color: #399dbe;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.projectSection .hidden {
+  opacity: 0;
+  transition: all 1s;
+}
+.projectSection .projectImage {
+  transform: translateX(-80%);
+  transition-delay: 400ms;
+}
+.projectSection .projectText {
+  transform: translateX(80%);
+}
+.projectSection .slideIn {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.socialsIcons, .contactIcons {
+  background-color: #399dbe;
+  color: #000000;
+  padding: 0.5rem;
+  border-radius: 50%;
+  line-height: 0.8rem;
+}
+
+.socialsIcons:hover {
+  background-color: #000000;
+  color: #399dbe;
+  border: solid 1px #399dbe;
+  transform: scale(1.2);
+}
+
+.contactSection {
+  gap: 1rem;
+}
+
+.link {
+  text-decoration: none;
+  color: #399dbe;
+}
+
+.link::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0;
+  background: rgba(255, 255, 255, 0.78);
+  transition: width 0.3s ease 0s, left 0.3s ease 0s;
+}
+
+.link:hover::after {
+  width: 70%;
+  left: 0;
+}
+
+.link:hover {
+  cursor: pointer;
+}
+
+hr {
+  border: 1px solid #399dbe;
+  width: 90vw;
+  margin: 2rem auto 1rem auto;
+}
+
+a {
+  color: white;
+}
+
+@media screen and (min-width: 750px) {
+  body {
+    font-size: 1.5rem;
+  }
+  .iconLinks {
+    line-height: 1.5rem;
+  }
+  .aboutContents {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: static;
+  }
+  .aboutContents img {
+    max-width: 40%;
+  }
+  .aboutContents p {
+    position: static !important;
+    width: 50%;
+  }
+  .projectDiv {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 5rem;
+  }
+  .projectDiv img {
+    max-height: 20rem;
+  }
+  .projectDiv p {
+    position: static;
+    height: fit-content;
+  }
+  .contactSection {
+    width: fit-content;
+    margin: 0 auto;
+  }
+  .titleHeader {
+    align-items: center;
+  }
+  hr {
+    width: 60vw;
+  }
+}
+@media (prefers-reduced-motion) {
+  .hidden {
+    transition: none;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
